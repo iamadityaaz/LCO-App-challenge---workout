@@ -86,25 +86,25 @@ export class ExercisePlayer extends PureComponent {
         start = this.state.currentExercise.time;
         setTimeout(() => {
           this.setBreak();
-          start = 400;
+          start = 40000;
           setTimeout(() => {
             this.setExercise(i++);
             start = this.state.currentExercise.time;
             setTimeout(() => {
               this.setBreak();
-              start = 400;
+              start = 40000;
               setTimeout(() => {
                 this.setExercise(i++);
                 start = this.state.currentExercise.time;
                 setTimeout(() => {
                   this.setBreak();
-                  start = 400;
+                  start = 40000;
                   setTimeout(() => {
                     this.setExercise(i++);
                     start = this.state.currentExercise.time;
                     setTimeout(() => {
                       this.setBreak();
-                      start = 400;
+                      start = 40000;
                       setTimeout(() => {
                         this.setExercise(i++);
                         start = this.state.currentExercise.time;
@@ -251,7 +251,7 @@ export class ExercisePlayer extends PureComponent {
             <Text>Hold On! Its break time</Text>
           </CardItem>
           <CountDown
-            until={parseInt(400 / 1000)}
+            until={parseInt(40000 / 1000)}
             size={30}
             onFinish={() => {}}
             digitStyle={{backgroundColor: '#2c2c2c'}}
